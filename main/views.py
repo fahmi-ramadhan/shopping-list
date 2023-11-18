@@ -60,6 +60,7 @@ def delete_product(request, id):
     # Kembali ke halaman awal
     return HttpResponseRedirect(reverse('main:show_main'))
 
+@csrf_exempt
 def register(request):
     form = UserCreationForm()
 
